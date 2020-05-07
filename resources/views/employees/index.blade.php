@@ -211,8 +211,6 @@
                             <select class="form-control" name="employee_update_company" id="employee_update_company">
                             </select>
                         </div>
-                        <input type="hidden" name="employee_id" id="employee_id" value="">
-
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i>

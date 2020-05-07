@@ -21,7 +21,6 @@
     </div>
 @endforeach
 <script>
-
     $('ul[id^="sort"]').sortable({
         connectWith: ".sortable",
         stop: function (event, ui) {

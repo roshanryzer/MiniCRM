@@ -25,9 +25,9 @@ class CompanyRequest extends FormRequest
     {
 
         if (request()->method() === 'PUT' || request()->method() === 'PATCH') {
-            $rules = ['name' => 'required|email|unique:companies,name,' . $this->route('companies') . ',id'];
+            $rules = ['name' => 'required|unique:companies,name,' . $this->route('companies') . ',id'];
         } else {
-            $rules = ['name' => 'required|email|unique:companies,name'];
+            $rules = ['name' => 'required|unique:companies,name'];
         }
         return [
             'company_name' => $rules['name'],

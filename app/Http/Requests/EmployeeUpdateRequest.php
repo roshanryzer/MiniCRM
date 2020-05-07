@@ -27,7 +27,7 @@ class EmployeeUpdateRequest extends FormRequest
             'employee_update_first_name' => 'required|string',
             'employee_update_last_name' => 'required|string',
             'employee_update_email' => 'required|email',
-            'employee_update_company' => 'required|exists:employees,id',
+            'employee_update_company' => 'required|numeric',
             'employee_update_phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
         ];
     }

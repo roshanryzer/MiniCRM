@@ -53,7 +53,7 @@ class EmployeeControllerAPI extends Controller
      */
     public function show($id)
     {
-         $employee = Employee::with('company')->find($id);
+        $employee = Employee::with('company')->find($id);
         if (isset($employee)) {
             return response()->json($employee, 200);
         }
